@@ -177,7 +177,6 @@
 				6B8F41319D22949AC0A20B21 /* Pods-APBLocationTrackerTests.debug.xcconfig */,
 				256D3C135D7D0F8FEFC49CF3 /* Pods-APBLocationTrackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -562,6 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N87CRMB5W;
 				INFOPLIST_FILE = APBLocationTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N87CRMB5W;
 				INFOPLIST_FILE = APBLocationTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
