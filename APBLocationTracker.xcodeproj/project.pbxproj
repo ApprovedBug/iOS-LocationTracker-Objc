@@ -191,6 +191,7 @@
 				7197359226E8FAF1001B36F7 /* Sources */,
 				7197359326E8FAF1001B36F7 /* Frameworks */,
 				7197359426E8FAF1001B36F7 /* Resources */,
+				E562A15F90703A5C2FFC9B0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +229,7 @@
 				719735BB26E8FAF3001B36F7 /* Sources */,
 				719735BC26E8FAF3001B36F7 /* Frameworks */,
 				719735BD26E8FAF3001B36F7 /* Resources */,
+				DD2ACCDB621F8C099E9DF174 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +374,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2ACCDB621F8C099E9DF174 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker-APBLocationTrackerUITests/Pods-APBLocationTracker-APBLocationTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker-APBLocationTrackerUITests/Pods-APBLocationTracker-APBLocationTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker-APBLocationTrackerUITests/Pods-APBLocationTracker-APBLocationTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E562A15F90703A5C2FFC9B0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker/Pods-APBLocationTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker/Pods-APBLocationTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APBLocationTracker/Pods-APBLocationTracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
