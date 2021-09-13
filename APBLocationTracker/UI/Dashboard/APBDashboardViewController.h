@@ -6,10 +6,13 @@
 //
 
 #import <APBFoundation/APBFoundation.h>
+#import "CoreLocation/CoreLocation.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface APBDashboardViewController : APBBaseViewController
+
+- (id)initWithLocationManager:(CLLocationManager *)locationManager;
 
 @end
 

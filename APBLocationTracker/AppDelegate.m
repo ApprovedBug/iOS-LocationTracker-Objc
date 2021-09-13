@@ -19,7 +19,8 @@
 - (UINavigationController *)navController {
 
     if (!_navController) {
-        APBDashboardViewController *dashboardViewController = [[APBDashboardViewController alloc] init];
+        CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+        APBDashboardViewController *dashboardViewController = [[APBDashboardViewController alloc] initWithLocationManager:locationManager];
         _navController = [[UINavigationController alloc] initWithRootViewController:dashboardViewController];
         [_navController setNavigationBarHidden:YES];
     }

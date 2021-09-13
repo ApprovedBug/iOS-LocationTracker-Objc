@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -474,11 +474,13 @@
 /* Begin PBXTargetDependency section */
 		719735B626E8FAF3001B36F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 7197359526E8FAF1001B36F7 /* APBLocationTracker */;
 			targetProxy = 719735B526E8FAF3001B36F7 /* PBXContainerItemProxy */;
 		};
 		719735C126E8FAF3001B36F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 7197359526E8FAF1001B36F7 /* APBLocationTracker */;
 			targetProxy = 719735C026E8FAF3001B36F7 /* PBXContainerItemProxy */;
 		};
