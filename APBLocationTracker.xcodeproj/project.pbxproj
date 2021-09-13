@@ -3,22 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		032A30602894C4DB6D6ED58F /* Pods_APBLocationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4385181701E6AF42408EC97D /* Pods_APBLocationTracker.framework */; };
 		31EAE847C750E5D8BA2A7F63 /* Pods_APBLocationTracker_APBLocationTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E5291E3DCD8635A98C7D74 /* Pods_APBLocationTracker_APBLocationTrackerUITests.framework */; };
 		7197359B26E8FAF1001B36F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7197359A26E8FAF1001B36F7 /* AppDelegate.m */; };
-		7197359E26E8FAF1001B36F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7197359D26E8FAF1001B36F7 /* SceneDelegate.m */; };
-		719735A126E8FAF1001B36F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735A026E8FAF1001B36F7 /* ViewController.m */; };
-		719735A426E8FAF1001B36F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719735A226E8FAF1001B36F7 /* Main.storyboard */; };
 		719735A726E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 719735A526E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld */; };
 		719735A926E8FAF2001B36F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719735A826E8FAF2001B36F7 /* Assets.xcassets */; };
 		719735AC26E8FAF2001B36F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719735AA26E8FAF2001B36F7 /* LaunchScreen.storyboard */; };
 		719735AF26E8FAF2001B36F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735AE26E8FAF2001B36F7 /* main.m */; };
 		719735B926E8FAF3001B36F7 /* APBLocationTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735B826E8FAF3001B36F7 /* APBLocationTrackerTests.m */; };
 		719735C426E8FAF3001B36F7 /* APBLocationTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735C326E8FAF3001B36F7 /* APBLocationTrackerUITests.m */; };
+		71E4F9D526EA658D0046B006 /* APBDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */; };
+		71E4F9D926EA65CA0046B006 /* APBDashboardRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4F9D826EA65CA0046B006 /* APBDashboardRootView.m */; };
 		8A56742B77195BAB8AD58AB1 /* Pods_APBLocationTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B058C776D48ACC38B05E71 /* Pods_APBLocationTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,11 +45,6 @@
 		7197359626E8FAF1001B36F7 /* APBLocationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APBLocationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7197359926E8FAF1001B36F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7197359A26E8FAF1001B36F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7197359C26E8FAF1001B36F7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7197359D26E8FAF1001B36F7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		7197359F26E8FAF1001B36F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		719735A026E8FAF1001B36F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		719735A326E8FAF1001B36F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		719735A626E8FAF1001B36F7 /* APBLocationTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = APBLocationTracker.xcdatamodel; sourceTree = "<group>"; };
 		719735A826E8FAF2001B36F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719735AB26E8FAF2001B36F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +56,10 @@
 		719735BF26E8FAF3001B36F7 /* APBLocationTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APBLocationTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		719735C326E8FAF3001B36F7 /* APBLocationTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBLocationTrackerUITests.m; sourceTree = "<group>"; };
 		719735C526E8FAF3001B36F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E4F9D326EA658D0046B006 /* APBDashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardViewController.h; sourceTree = "<group>"; };
+		71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardViewController.m; sourceTree = "<group>"; };
+		71E4F9D726EA65CA0046B006 /* APBDashboardRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardRootView.h; sourceTree = "<group>"; };
+		71E4F9D826EA65CA0046B006 /* APBDashboardRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardRootView.m; sourceTree = "<group>"; };
 		7E81BB11175B0D08AB2224DA /* Pods-APBLocationTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APBLocationTracker.debug.xcconfig"; path = "Target Support Files/Pods-APBLocationTracker/Pods-APBLocationTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A282D60E577A477651D1DB5F /* Pods-APBLocationTracker-APBLocationTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APBLocationTracker-APBLocationTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-APBLocationTracker-APBLocationTrackerUITests/Pods-APBLocationTracker-APBLocationTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8E5291E3DCD8635A98C7D74 /* Pods_APBLocationTracker_APBLocationTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APBLocationTracker_APBLocationTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,16 +123,8 @@
 			children = (
 				7197359926E8FAF1001B36F7 /* AppDelegate.h */,
 				7197359A26E8FAF1001B36F7 /* AppDelegate.m */,
-				7197359C26E8FAF1001B36F7 /* SceneDelegate.h */,
-				7197359D26E8FAF1001B36F7 /* SceneDelegate.m */,
-				7197359F26E8FAF1001B36F7 /* ViewController.h */,
-				719735A026E8FAF1001B36F7 /* ViewController.m */,
-				719735A226E8FAF1001B36F7 /* Main.storyboard */,
-				719735A826E8FAF2001B36F7 /* Assets.xcassets */,
-				719735AA26E8FAF2001B36F7 /* LaunchScreen.storyboard */,
-				719735AD26E8FAF2001B36F7 /* Info.plist */,
-				719735AE26E8FAF2001B36F7 /* main.m */,
-				719735A526E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld */,
+				71E4F9D026EA64C40046B006 /* Supporting Files */,
+				71E4F9D126EA651E0046B006 /* UI */,
 			);
 			path = APBLocationTracker;
 			sourceTree = "<group>";
@@ -155,6 +145,45 @@
 				719735C526E8FAF3001B36F7 /* Info.plist */,
 			);
 			path = APBLocationTrackerUITests;
+			sourceTree = "<group>";
+		};
+		71E4F9D026EA64C40046B006 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				719735A826E8FAF2001B36F7 /* Assets.xcassets */,
+				719735AA26E8FAF2001B36F7 /* LaunchScreen.storyboard */,
+				719735AD26E8FAF2001B36F7 /* Info.plist */,
+				719735AE26E8FAF2001B36F7 /* main.m */,
+				719735A526E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E4F9D126EA651E0046B006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71E4F9D226EA65350046B006 /* Dashboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		71E4F9D226EA65350046B006 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				71E4F9D626EA65A50046B006 /* Views */,
+				71E4F9D326EA658D0046B006 /* APBDashboardViewController.h */,
+				71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		71E4F9D626EA65A50046B006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71E4F9D726EA65CA0046B006 /* APBDashboardRootView.h */,
+				71E4F9D826EA65CA0046B006 /* APBDashboardRootView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7BA1B7CFEE1ADC643B0687B6 /* Frameworks */ = {
@@ -289,7 +318,6 @@
 			files = (
 				719735AC26E8FAF2001B36F7 /* LaunchScreen.storyboard in Resources */,
 				719735A926E8FAF2001B36F7 /* Assets.xcassets in Resources */,
-				719735A426E8FAF1001B36F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +446,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				719735AF26E8FAF2001B36F7 /* main.m in Sources */,
-				719735A126E8FAF1001B36F7 /* ViewController.m in Sources */,
+				71E4F9D526EA658D0046B006 /* APBDashboardViewController.m in Sources */,
+				71E4F9D926EA65CA0046B006 /* APBDashboardRootView.m in Sources */,
 				7197359B26E8FAF1001B36F7 /* AppDelegate.m in Sources */,
-				7197359E26E8FAF1001B36F7 /* SceneDelegate.m in Sources */,
 				719735A726E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,14 +485,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		719735A226E8FAF1001B36F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				719735A326E8FAF1001B36F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		719735AA26E8FAF2001B36F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -596,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N87CRMB5W;
-				INFOPLIST_FILE = APBLocationTracker/Info.plist;
+				INFOPLIST_FILE = "APBLocationTracker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,7 +636,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N87CRMB5W;
-				INFOPLIST_FILE = APBLocationTracker/Info.plist;
+				INFOPLIST_FILE = "APBLocationTracker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
