@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '14.5'
+
 source "https://github.com/ApprovedBug/iOS-Specs.git"
 
 target 'APBLocationTracker' do
