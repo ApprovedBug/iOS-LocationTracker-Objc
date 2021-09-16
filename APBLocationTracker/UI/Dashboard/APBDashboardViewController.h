@@ -7,10 +7,16 @@
 
 #import <APBFoundation/APBFoundation.h>
 #import "CoreLocation/CoreLocation.h"
+#import "APBDashboardRootView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APBDashboardViewController : APBBaseViewController
+@interface APBDashboardViewController : APBBaseViewController {
+    CLLocationManager *_locationManager;
+    APBDashboardRootView *_rootView;
+}
+
+@property (nonatomic) APBDashboardRootView *rootView;
 
 - (id)initWithLocationManager:(CLLocationManager *)locationManager;
 

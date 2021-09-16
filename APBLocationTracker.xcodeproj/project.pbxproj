@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		032A30602894C4DB6D6ED58F /* Pods_APBLocationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4385181701E6AF42408EC97D /* Pods_APBLocationTracker.framework */; };
 		31EAE847C750E5D8BA2A7F63 /* Pods_APBLocationTracker_APBLocationTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E5291E3DCD8635A98C7D74 /* Pods_APBLocationTracker_APBLocationTrackerUITests.framework */; };
+		71848AE326EF979A00EC75C8 /* APBDashboardViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71848AE226EF979A00EC75C8 /* APBDashboardViewControllerTests.m */; };
+		71848AE726EF9BDB00EC75C8 /* APBDashboardViewControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 71848AE626EF9BDB00EC75C8 /* APBDashboardViewControllerMock.m */; };
 		7197359B26E8FAF1001B36F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7197359A26E8FAF1001B36F7 /* AppDelegate.m */; };
 		719735A726E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 719735A526E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld */; };
 		719735A926E8FAF2001B36F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719735A826E8FAF2001B36F7 /* Assets.xcassets */; };
@@ -16,6 +18,16 @@
 		719735AF26E8FAF2001B36F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735AE26E8FAF2001B36F7 /* main.m */; };
 		719735B926E8FAF3001B36F7 /* APBLocationTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735B826E8FAF3001B36F7 /* APBLocationTrackerTests.m */; };
 		719735C426E8FAF3001B36F7 /* APBLocationTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719735C326E8FAF3001B36F7 /* APBLocationTrackerUITests.m */; };
+		71E02C3826F0A94300830248 /* APBReviewMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C2E26F0A94300830248 /* APBReviewMO+CoreDataClass.m */; };
+		71E02C3926F0A94300830248 /* APBReviewMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C2F26F0A94300830248 /* APBReviewMO+CoreDataProperties.m */; };
+		71E02C3A26F0A94300830248 /* APBLocationMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C3226F0A94300830248 /* APBLocationMO+CoreDataClass.m */; };
+		71E02C3B26F0A94300830248 /* APBLocationMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C3326F0A94300830248 /* APBLocationMO+CoreDataProperties.m */; };
+		71E02C3C26F0A94300830248 /* APBPhotoMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C3626F0A94300830248 /* APBPhotoMO+CoreDataClass.m */; };
+		71E02C3D26F0A94300830248 /* APBPhotoMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C3726F0A94300830248 /* APBPhotoMO+CoreDataProperties.m */; };
+		71E02C4226F0F17E00830248 /* NSDictionary+SafeGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C4126F0F17E00830248 /* NSDictionary+SafeGuard.m */; };
+		71E02C4526F100DB00830248 /* NSManagedObject+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C4426F100DB00830248 /* NSManagedObject+Helpers.m */; };
+		71E02C4926F25F4600830248 /* APBLocationsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C4826F25F4600830248 /* APBLocationsCollectionViewDelegate.m */; };
+		71E02C4C26F2626600830248 /* APBDashboardLocationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E02C4B26F2626600830248 /* APBDashboardLocationCollectionViewCell.m */; };
 		71E4F9D526EA658D0046B006 /* APBDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */; };
 		71E4F9D926EA65CA0046B006 /* APBDashboardRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4F9D826EA65CA0046B006 /* APBDashboardRootView.m */; };
 		8A56742B77195BAB8AD58AB1 /* Pods_APBLocationTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B058C776D48ACC38B05E71 /* Pods_APBLocationTrackerTests.framework */; };
@@ -42,6 +54,9 @@
 		256D3C135D7D0F8FEFC49CF3 /* Pods-APBLocationTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APBLocationTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-APBLocationTrackerTests/Pods-APBLocationTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4385181701E6AF42408EC97D /* Pods_APBLocationTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APBLocationTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8F41319D22949AC0A20B21 /* Pods-APBLocationTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APBLocationTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-APBLocationTrackerTests/Pods-APBLocationTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71848AE226EF979A00EC75C8 /* APBDashboardViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardViewControllerTests.m; sourceTree = "<group>"; };
+		71848AE526EF9BDB00EC75C8 /* APBDashboardViewControllerMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardViewControllerMock.h; sourceTree = "<group>"; };
+		71848AE626EF9BDB00EC75C8 /* APBDashboardViewControllerMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardViewControllerMock.m; sourceTree = "<group>"; };
 		7197359626E8FAF1001B36F7 /* APBLocationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APBLocationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7197359926E8FAF1001B36F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7197359A26E8FAF1001B36F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +71,26 @@
 		719735BF26E8FAF3001B36F7 /* APBLocationTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APBLocationTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		719735C326E8FAF3001B36F7 /* APBLocationTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBLocationTrackerUITests.m; sourceTree = "<group>"; };
 		719735C526E8FAF3001B36F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E02C2C26F0A94300830248 /* APBReviewMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBReviewMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		71E02C2D26F0A94300830248 /* APBReviewMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBReviewMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		71E02C2E26F0A94300830248 /* APBReviewMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBReviewMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		71E02C2F26F0A94300830248 /* APBReviewMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBReviewMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		71E02C3026F0A94300830248 /* APBLocationMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBLocationMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		71E02C3126F0A94300830248 /* APBLocationMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBLocationMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		71E02C3226F0A94300830248 /* APBLocationMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBLocationMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		71E02C3326F0A94300830248 /* APBLocationMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBLocationMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		71E02C3426F0A94300830248 /* APBPhotoMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBPhotoMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		71E02C3526F0A94300830248 /* APBPhotoMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APBPhotoMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		71E02C3626F0A94300830248 /* APBPhotoMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBPhotoMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		71E02C3726F0A94300830248 /* APBPhotoMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "APBPhotoMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		71E02C4026F0F17E00830248 /* NSDictionary+SafeGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeGuard.h"; sourceTree = "<group>"; };
+		71E02C4126F0F17E00830248 /* NSDictionary+SafeGuard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeGuard.m"; sourceTree = "<group>"; };
+		71E02C4326F100DB00830248 /* NSManagedObject+Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Helpers.h"; sourceTree = "<group>"; };
+		71E02C4426F100DB00830248 /* NSManagedObject+Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Helpers.m"; sourceTree = "<group>"; };
+		71E02C4726F25F4600830248 /* APBLocationsCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBLocationsCollectionViewDelegate.h; sourceTree = "<group>"; };
+		71E02C4826F25F4600830248 /* APBLocationsCollectionViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBLocationsCollectionViewDelegate.m; sourceTree = "<group>"; };
+		71E02C4A26F2626600830248 /* APBDashboardLocationCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardLocationCollectionViewCell.h; sourceTree = "<group>"; };
+		71E02C4B26F2626600830248 /* APBDashboardLocationCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardLocationCollectionViewCell.m; sourceTree = "<group>"; };
 		71E4F9D326EA658D0046B006 /* APBDashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardViewController.h; sourceTree = "<group>"; };
 		71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APBDashboardViewController.m; sourceTree = "<group>"; };
 		71E4F9D726EA65CA0046B006 /* APBDashboardRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APBDashboardRootView.h; sourceTree = "<group>"; };
@@ -96,6 +131,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7175D26A26F09C1600C1C219 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71E02C3126F0A94300830248 /* APBLocationMO+CoreDataClass.h */,
+				71E02C3226F0A94300830248 /* APBLocationMO+CoreDataClass.m */,
+				71E02C3026F0A94300830248 /* APBLocationMO+CoreDataProperties.h */,
+				71E02C3326F0A94300830248 /* APBLocationMO+CoreDataProperties.m */,
+				71E02C3526F0A94300830248 /* APBPhotoMO+CoreDataClass.h */,
+				71E02C3626F0A94300830248 /* APBPhotoMO+CoreDataClass.m */,
+				71E02C3426F0A94300830248 /* APBPhotoMO+CoreDataProperties.h */,
+				71E02C3726F0A94300830248 /* APBPhotoMO+CoreDataProperties.m */,
+				71E02C2D26F0A94300830248 /* APBReviewMO+CoreDataClass.h */,
+				71E02C2E26F0A94300830248 /* APBReviewMO+CoreDataClass.m */,
+				71E02C2C26F0A94300830248 /* APBReviewMO+CoreDataProperties.h */,
+				71E02C2F26F0A94300830248 /* APBReviewMO+CoreDataProperties.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71848ADF26EF976F00EC75C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71848AE026EF977400EC75C8 /* Dashboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		71848AE026EF977400EC75C8 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				71848AE426EF9BB900EC75C8 /* Mocks */,
+				71848AE226EF979A00EC75C8 /* APBDashboardViewControllerTests.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		71848AE426EF9BB900EC75C8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				71848AE526EF9BDB00EC75C8 /* APBDashboardViewControllerMock.h */,
+				71848AE626EF9BDB00EC75C8 /* APBDashboardViewControllerMock.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		7197358D26E8FAF1001B36F7 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +203,8 @@
 			children = (
 				7197359926E8FAF1001B36F7 /* AppDelegate.h */,
 				7197359A26E8FAF1001B36F7 /* AppDelegate.m */,
+				71E02C3F26F0F15300830248 /* Categories */,
+				7175D26A26F09C1600C1C219 /* Models */,
 				71E4F9D026EA64C40046B006 /* Supporting Files */,
 				71E4F9D126EA651E0046B006 /* UI */,
 			);
@@ -132,6 +214,7 @@
 		719735B726E8FAF3001B36F7 /* APBLocationTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				71848ADF26EF976F00EC75C8 /* UI */,
 				719735B826E8FAF3001B36F7 /* APBLocationTrackerTests.m */,
 				719735BA26E8FAF3001B36F7 /* Info.plist */,
 			);
@@ -145,6 +228,26 @@
 				719735C526E8FAF3001B36F7 /* Info.plist */,
 			);
 			path = APBLocationTrackerUITests;
+			sourceTree = "<group>";
+		};
+		71E02C3F26F0F15300830248 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				71E02C4026F0F17E00830248 /* NSDictionary+SafeGuard.h */,
+				71E02C4126F0F17E00830248 /* NSDictionary+SafeGuard.m */,
+				71E02C4326F100DB00830248 /* NSManagedObject+Helpers.h */,
+				71E02C4426F100DB00830248 /* NSManagedObject+Helpers.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		71E02C4626F25F1D00830248 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				71E02C4726F25F4600830248 /* APBLocationsCollectionViewDelegate.h */,
+				71E02C4826F25F4600830248 /* APBLocationsCollectionViewDelegate.m */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		71E4F9D026EA64C40046B006 /* Supporting Files */ = {
@@ -170,6 +273,7 @@
 		71E4F9D226EA65350046B006 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				71E02C4626F25F1D00830248 /* Delegates */,
 				71E4F9D626EA65A50046B006 /* Views */,
 				71E4F9D326EA658D0046B006 /* APBDashboardViewController.h */,
 				71E4F9D426EA658D0046B006 /* APBDashboardViewController.m */,
@@ -182,6 +286,8 @@
 			children = (
 				71E4F9D726EA65CA0046B006 /* APBDashboardRootView.h */,
 				71E4F9D826EA65CA0046B006 /* APBDashboardRootView.m */,
+				71E02C4A26F2626600830248 /* APBDashboardLocationCollectionViewCell.h */,
+				71E02C4B26F2626600830248 /* APBDashboardLocationCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -448,8 +554,18 @@
 				719735AF26E8FAF2001B36F7 /* main.m in Sources */,
 				71E4F9D526EA658D0046B006 /* APBDashboardViewController.m in Sources */,
 				71E4F9D926EA65CA0046B006 /* APBDashboardRootView.m in Sources */,
+				71E02C3B26F0A94300830248 /* APBLocationMO+CoreDataProperties.m in Sources */,
+				71E02C3826F0A94300830248 /* APBReviewMO+CoreDataClass.m in Sources */,
+				71E02C3A26F0A94300830248 /* APBLocationMO+CoreDataClass.m in Sources */,
+				71E02C4526F100DB00830248 /* NSManagedObject+Helpers.m in Sources */,
 				7197359B26E8FAF1001B36F7 /* AppDelegate.m in Sources */,
 				719735A726E8FAF1001B36F7 /* APBLocationTracker.xcdatamodeld in Sources */,
+				71E02C4C26F2626600830248 /* APBDashboardLocationCollectionViewCell.m in Sources */,
+				71E02C3C26F0A94300830248 /* APBPhotoMO+CoreDataClass.m in Sources */,
+				71E02C4926F25F4600830248 /* APBLocationsCollectionViewDelegate.m in Sources */,
+				71E02C3926F0A94300830248 /* APBReviewMO+CoreDataProperties.m in Sources */,
+				71E02C3D26F0A94300830248 /* APBPhotoMO+CoreDataProperties.m in Sources */,
+				71E02C4226F0F17E00830248 /* NSDictionary+SafeGuard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +573,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71848AE726EF9BDB00EC75C8 /* APBDashboardViewControllerMock.m in Sources */,
 				719735B926E8FAF3001B36F7 /* APBLocationTrackerTests.m in Sources */,
+				71848AE326EF979A00EC75C8 /* APBDashboardViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

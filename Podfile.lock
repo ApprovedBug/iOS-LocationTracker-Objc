@@ -1,16 +1,21 @@
 PODS:
   - APBFoundation (0.1.0)
+  - FLKAutoLayout (1.0.1)
 
 DEPENDENCIES:
   - APBFoundation (= 0.1.0)
+  - FLKAutoLayout (= 1.0.1)
 
 SPEC REPOS:
   https://github.com/ApprovedBug/iOS-Specs.git:
     - APBFoundation
+  trunk:
+    - FLKAutoLayout
 
 SPEC CHECKSUMS:
   APBFoundation: cc5e950fa3d7a9d0d90af390eabff02148881f25
+  FLKAutoLayout: 37e1e09de6411dbee5526860d9f55d9063323ea8
 
-PODFILE CHECKSUM: baa425a9243f0f73e91565097b76062f5fb5116b
+PODFILE CHECKSUM: eac29409b8864337a2eaadb4eb6b7ce61b7416dd
 
 COCOAPODS: 1.10.1

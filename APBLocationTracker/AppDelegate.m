@@ -22,7 +22,8 @@
         CLLocationManager *locationManager = [[CLLocationManager alloc] init];
         APBDashboardViewController *dashboardViewController = [[APBDashboardViewController alloc] initWithLocationManager:locationManager];
         _navController = [[UINavigationController alloc] initWithRootViewController:dashboardViewController];
-        [_navController setNavigationBarHidden:YES];
+        _navController.navigationBar.barStyle = UIBarStyleBlack;
+        _navController.navigationBar.tintColor = [UIColor whiteColor];
     }
 
     return _navController;
