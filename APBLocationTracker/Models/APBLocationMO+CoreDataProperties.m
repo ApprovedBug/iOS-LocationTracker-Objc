@@ -17,8 +17,11 @@
 @dynamic id;
 @dynamic name;
 @dynamic rating;
+@dynamic thumbnailUrl;
 @dynamic types;
 @dynamic vicinity;
+@dynamic userRatingsTotal;
+@dynamic priceLevel;
 @dynamic photos;
 @dynamic reviews;
 

@@ -18,8 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *id;
 @property (nullable, nonatomic, copy) NSString *name;
 @property (nonatomic) double rating;
-@property (nullable, nonatomic, retain) NSObject *types;
+@property (nullable, nonatomic, copy) NSString *thumbnailUrl;
+@property (nullable, nonatomic, retain) NSArray *types;
 @property (nullable, nonatomic, copy) NSString *vicinity;
+@property (nonatomic) int16_t userRatingsTotal;
+@property (nonatomic) int16_t priceLevel;
 @property (nullable, nonatomic, retain) NSSet<APBPhotoMO *> *photos;
 @property (nullable, nonatomic, retain) NSSet<APBReviewMO *> *reviews;
 

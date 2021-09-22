@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Coordinate" representedClassName="APBCoordinateMO" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="visit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Visit" inverseName="coordinate" inverseEntity="Visit"/>
+    </entity>
     <entity name="Location" representedClassName="APBLocationMO" syncable="YES">
         <attribute name="id" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="priceLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="types" optional="YES" attributeType="Transformable" valueTransformerName=""/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String"/>
+        <attribute name="types" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="userRatingsTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="vicinity" optional="YES" attributeType="String"/>
         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Photo" inverseName="location" inverseEntity="Photo"/>
         <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Review" inverseName="location" inverseEntity="Review"/>
+        <relationship name="visits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Visit" inverseName="location" inverseEntity="Visit"/>
     </entity>
     <entity name="Photo" representedClassName="APBPhotoMO" syncable="YES">
         <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
@@ -23,9 +32,17 @@
         <attribute name="text" optional="YES" attributeType="String"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="reviews" inverseEntity="Location"/>
     </entity>
+    <entity name="Visit" representedClassName="APBVisitMO" syncable="YES">
+        <attribute name="dateTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="searched" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="coordinate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coordinate" inverseName="visit" inverseEntity="Coordinate"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="visits" inverseEntity="Location"/>
+    </entity>
     <elements>
-        <element name="Location" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="Coordinate" positionX="-54" positionY="54" width="128" height="74"/>
+        <element name="Location" positionX="-63" positionY="-18" width="128" height="194"/>
         <element name="Photo" positionX="-36" positionY="36" width="128" height="89"/>
         <element name="Review" positionX="-54" positionY="27" width="128" height="119"/>
+        <element name="Visit" positionX="-45" positionY="63" width="128" height="89"/>
     </elements>
 </model>

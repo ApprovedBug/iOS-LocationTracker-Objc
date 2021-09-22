@@ -1,0 +1,1038 @@
+{
+    "html_attributions": [],
+    "next_page_token": "Aap_uEABjReU2vuedXqHZJ-5B3mbTzw3xnjZ0kDdEiWaFgBPDa4VXyPwgVDM0nV_kWUU2w01t2DdXVIzFPml0wR0jcFa7mqYuAoZ6WIwJpx9j60qLYOhfU_zsJTfpRL0pS16ZjQTuA-B1wHaoyluYikvZfAoocyyB-VnYEnwNApYA93PKIq9N-ehiOmPwJkhznYzQNboRHkP1WF5j_CDGfeIgYD2rAKLgT5hdSP540gjaH3ccHOgSWVG7PDADdXPehbMgPredMEe575QllSep6HYoIqT5ByFumOW2H9at3HNHrVfRa5MieMKnKaEhKW27tOnGkjZLj6V6vGgTaREoLS7bVsoO6nt2riYT67zGL2n8dmr7zipvi7PoCXXgKachEJMxQeI9xsRrRWDjmt2_5lXHXY3Mcl0wy98GdmVLDF_SymMbcrjxVo",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3922,
+                    "lng": 2.152400000000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3934748302915,
+                        "lng": 2.153662380291502
+                    },
+                    "southwest": {
+                        "lat": 41.3907768697085,
+                        "lng": 2.150964419708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Tàmara - Barcelona",
+            "photos": [
+                {
+                    "height": 2080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108017747236280841401\">Joan Soler Martí</a>"
+                    ],
+                    "photo_reference": "Aap_uEC29tme29CVuCW1JFWF5qVxU4PQPKcjWVf3bMni5Wsf_8c_QRLIqIkrUsh3JJuPXz9mRy4O6SBA9T7cPTF7GrA6Ae7-uufne7d1CDR8vDpoEPMRw5t36dqHwAXQ2JNiOPxGQZGdn1fWqAkqEBjjo-qhC-uArxdLwlpaLAMnBjblCoRf",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJPWK2IJuipBIRsPCRNMm1N1Q",
+            "plus_code": {
+                "compound_code": "95R2+VX Barcelona, Spain",
+                "global_code": "8FH495R2+VX"
+            },
+            "price_level": 2,
+            "rating": 3.8,
+            "reference": "ChIJPWK2IJuipBIRsPCRNMm1N1Q",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 912,
+            "vicinity": "Carrer de Muntaner, 178, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.390515,
+                    "lng": 2.159025
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.39180168029151,
+                        "lng": 2.160330730291502
+                    },
+                    "southwest": {
+                        "lat": 41.38910371970851,
+                        "lng": 2.157632769708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Alba Granados",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1468,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105239667358858566737\">Alba Granados</a>"
+                    ],
+                    "photo_reference": "Aap_uEALGZUlRk-Q_LCRHl6VEpo66MMHEJrxFMfZ0QoK1S3k9j3KwwtKwqYP0_J4ocR_16XihcIY6b9YmcDf0YdamGCve3c3LyT0EqhpH7cQjk9T3vjjVjzpW3SoSPSkNov63BmQgyzZhAI4jwRWAn5QMSHPdkQxpHh93IKzTfrU0C_vfL_h",
+                    "width": 2202
+                }
+            ],
+            "place_id": "ChIJUWzzGo6ipBIRiRLb6C2zI54",
+            "plus_code": {
+                "compound_code": "95R5+6J Barcelona, Spain",
+                "global_code": "8FH495R5+6J"
+            },
+            "price_level": 3,
+            "rating": 4,
+            "reference": "ChIJUWzzGo6ipBIRiRLb6C2zI54",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1456,
+            "vicinity": "Carrer d'Enric Granados, 34, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3888143,
+                    "lng": 2.1567366
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.39011203029149,
+                        "lng": 2.158045530291502
+                    },
+                    "southwest": {
+                        "lat": 41.3874140697085,
+                        "lng": 2.155347569708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Bar Restaurante 106",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 701,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112293031204744856442\">Bar Restaurante 106</a>"
+                    ],
+                    "photo_reference": "Aap_uEAz9XREZogar4HY5OBqIPueKUrP0Mym_V8vG74np-vkbg9ETM87Oh_8uEGiTaFvAf-1tmGmAMjIGjo_dsBVCC_SuM07jhfjMFk8Tf-tcEJ14WYL2oVV31Bx1evj0epxhlJ44PRLoKIn-ev6VEsxNUQHLQSVbCFDjmHTfAHMPp9yNWgE",
+                    "width": 713
+                }
+            ],
+            "place_id": "ChIJAQWSqI-ipBIRrnlwFxOeg2M",
+            "plus_code": {
+                "compound_code": "95Q4+GM Barcelona, Spain",
+                "global_code": "8FH495Q4+GM"
+            },
+            "price_level": 1,
+            "rating": 4.4,
+            "reference": "ChIJAQWSqI-ipBIRrnlwFxOeg2M",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 39,
+            "vicinity": "Carrer de Muntaner, 106, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3894644,
+                    "lng": 2.1577425
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3908133802915,
+                        "lng": 2.159091480291502
+                    },
+                    "southwest": {
+                        "lat": 41.38811541970851,
+                        "lng": 2.156393519708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Espit Chupitos",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104035122004215410508\">Espit Chupitos</a>"
+                    ],
+                    "photo_reference": "Aap_uEBWyW5vwv8iyM5ZKYlsX_Cwj1WD0arLy5Y2hk2Wj84E0wDIDXILY2LWZSjsD-qlS9Kf9-aekznPM4IxX37nHIdOJw_EOcLeL6YsqkwnWgP09D9I7FObjtcQghWBfNQRvxnHRe8RYNCoxAq47YHmdBR94vW604Rx9QH6_k6kzpp1KK7f",
+                    "width": 5184
+                }
+            ],
+            "place_id": "ChIJwUaKRY6ipBIRARUS6iUPjEk",
+            "plus_code": {
+                "compound_code": "95Q5+Q3 Barcelona, Spain",
+                "global_code": "8FH495Q5+Q3"
+            },
+            "price_level": 1,
+            "rating": 4.1,
+            "reference": "ChIJwUaKRY6ipBIRARUS6iUPjEk",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1594,
+            "vicinity": "Carrer d'Aribau, 77, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3872116,
+                    "lng": 2.1588758
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3885227802915,
+                        "lng": 2.160171830291502
+                    },
+                    "southwest": {
+                        "lat": 41.3858248197085,
+                        "lng": 2.157473869708499
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sagardi BCN Centre",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 925,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103753836632863791993\">Sagardi BCN Centre</a>"
+                    ],
+                    "photo_reference": "Aap_uED4GFtZcSV0LUD6MVoBKOyJa7Wm34ozGbzy5lvOVfv1g4pgAWLazoPiVrHcB2PDlHIH4JbRFLlxtDygE0mtQaJ9xzxMEgdKHPv_xlPrcvXuRTMkO-L6aL-K5-RzZ2SFqO6yA9196bpDubFzNjrfOn-ThMPHrc7xAoD7kzqG-xfdioo",
+                    "width": 1278
+                }
+            ],
+            "place_id": "ChIJ5fDevY6ipBIR6lkMYnInWKc",
+            "plus_code": {
+                "compound_code": "95P5+VH Barcelona, Spain",
+                "global_code": "8FH495P5+VH"
+            },
+            "price_level": 2,
+            "rating": 4.1,
+            "reference": "ChIJ5fDevY6ipBIR6lkMYnInWKc",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1030,
+            "vicinity": "Carrer de Muntaner, 70, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3909718,
+                    "lng": 2.151101
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3923702802915,
+                        "lng": 2.152525780291502
+                    },
+                    "southwest": {
+                        "lat": 41.3896723197085,
+                        "lng": 2.149827819708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Maitea",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 12000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101378060143599411495\">Mohammed Aldawood</a>"
+                    ],
+                    "photo_reference": "Aap_uEBZbR0oPfop1HW7jZA0Qc_fklB8mv_MKPza3SYLhZP95JM9UEmf2lpNfwE-5s7j7WoKX5eMXYdmiaFAhhthJdvx4NSbvZ5Z-thYzPt_wRXRQwYt-6Z2TAj8UgSg0COR6iR02YsZUL56_m1WCogrliy6PnGM7PZzXDzWkcFAVWW4pGCQ",
+                    "width": 9000
+                }
+            ],
+            "place_id": "ChIJF8gztYSipBIRbapR6Oggbfc",
+            "plus_code": {
+                "compound_code": "95R2+9C Barcelona, Spain",
+                "global_code": "8FH495R2+9C"
+            },
+            "price_level": 2,
+            "rating": 4.3,
+            "reference": "ChIJF8gztYSipBIRbapR6Oggbfc",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 2439,
+            "vicinity": "Carrer de Casanova, 155, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.39098889999999,
+                    "lng": 2.1517453
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3922956302915,
+                        "lng": 2.153161780291502
+                    },
+                    "southwest": {
+                        "lat": 41.3895976697085,
+                        "lng": 2.150463819708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Galeno",
+            "place_id": "ChIJndmK0oSipBIRVYdCibCsAqs",
+            "plus_code": {
+                "compound_code": "95R2+9M Barcelona, Spain",
+                "global_code": "8FH495R2+9M"
+            },
+            "reference": "ChIJndmK0oSipBIRVYdCibCsAqs",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Carrer de Còrsega, 207, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3862157,
+                    "lng": 2.154511500000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3875646802915,
+                        "lng": 2.155860480291502
+                    },
+                    "southwest": {
+                        "lat": 41.3848667197085,
+                        "lng": 2.153162519708499
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Restaurante Pilar - Tapería Barcelona",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/100937415855988874978\">Restaurante Pilar - Tapería Barcelona</a>"
+                    ],
+                    "photo_reference": "Aap_uED766bNiLtgcs5FXx69Q8BMPqR55AHHHsvWbtpqB4E49ToBHBAdIt3UkKFu5OEcPsPehp4y9Uks3kCDv3pMkcKsxL17LyhrQqldCk1spFOYq9cipgdA5_Cyg_q_vO6lHSAVoQvhRPslLaZ9KMc54ljGTlnWyuPoItniRGXH90SW4_pG",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJ2VYB_oWipBIRMiEzxUmraT0",
+            "plus_code": {
+                "compound_code": "95P3+FR Barcelona, Spain",
+                "global_code": "8FH495P3+FR"
+            },
+            "price_level": 1,
+            "rating": 4.4,
+            "reference": "ChIJ2VYB_oWipBIRMiEzxUmraT0",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "bar",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 564,
+            "vicinity": "Carrer de València, 113, Barcelona"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 41.38984019999999,
+                    "lng": 2.1555007
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3911236302915,
+                        "lng": 2.156760880291502
+                    },
+                    "southwest": {
+                        "lat": 41.3884256697085,
+                        "lng": 2.154062919708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Contraste",
+            "permanently_closed": true,
+            "photos": [
+                {
+                    "height": 1920,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102882504956344077143\">Ivan Tutope</a>"
+                    ],
+                    "photo_reference": "Aap_uEAw5_L9eHOPUH31z9_jcVv6BlDLRfePTzYoT3L1vjXyAVpSW8TmBECmPM-u_cfb9kQg4EiO5USwWZNz-WNgsTq6bExr_vLLfMktJLqwfe2p2FNFHsztQtfetFEGlypvAxG0BpVUUH0ea-_MQTc408XjcobYeIVDPIMhbfi38l9681Ck",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJlz5EjY-ipBIRk8FmFJC8MlA",
+            "plus_code": {
+                "compound_code": "95Q4+W6 Barcelona, Spain",
+                "global_code": "8FH495Q4+W6"
+            },
+            "price_level": 2,
+            "rating": 3.1,
+            "reference": "ChIJlz5EjY-ipBIRk8FmFJC8MlA",
+            "scope": "GOOGLE",
+            "types": [
+                "night_club",
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 196,
+            "vicinity": "Carrer de Muntaner, 130, Barcelona"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 41.39049999999999,
+                    "lng": 2.1555
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.39184898029148,
+                        "lng": 2.156848980291502
+                    },
+                    "southwest": {
+                        "lat": 41.38915101970849,
+                        "lng": 2.154151019708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "La Fira",
+            "permanently_closed": true,
+            "photos": [
+                {
+                    "height": 882,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109558364605860127129\">La Fira Provença</a>"
+                    ],
+                    "photo_reference": "Aap_uEBBzeGQAGdZ2ToEAhE2ZMWcusC-6XlMcOHwSP4KPj63WUOhYgecyc_HjVxX_VCM9z3aZWinKwf4ftpRBVCkok_7QAmYhi7txrCEpXPnDUuwpwKk6Gqihal0RT-f1D_GPpQ-zmgRSPaVCjh9G2rqxXAKrIByGMlOwAJlHw9Zb5O9bSSC",
+                    "width": 1568
+                }
+            ],
+            "place_id": "ChIJD9Gr74-ipBIR19g8q0sYo5w",
+            "plus_code": {
+                "compound_code": "95R4+65 Barcelona, Spain",
+                "global_code": "8FH495R4+65"
+            },
+            "price_level": 2,
+            "rating": 3.6,
+            "reference": "ChIJD9Gr74-ipBIR19g8q0sYo5w",
+            "scope": "GOOGLE",
+            "types": [
+                "night_club",
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1701,
+            "vicinity": "Carrer de Provença, 171, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3878903,
+                    "lng": 2.1565929
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3892392802915,
+                        "lng": 2.157941880291502
+                    },
+                    "southwest": {
+                        "lat": 41.3865413197085,
+                        "lng": 2.155243919708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "La Hacienda",
+            "photos": [
+                {
+                    "height": 3968,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/110208975451343271701\">Cantina Mexicana La Hacienda Valencia</a>"
+                    ],
+                    "photo_reference": "Aap_uEA4-ooaLEW-3cZQ89vPt0PC5bSEakxmx9tBBfWohh784stCNFc3s8w1t7K5c2zBvSr3XY0302JfirzE7pjQ6YLRSaiR-BWuyDcfLORminUJrGwC8Amtyp1GA0kLVGKzypcrgb-YdcEeAsYuLl99GujbeXNek3dP_D9BxkF5h7EaoHRh",
+                    "width": 2976
+                }
+            ],
+            "place_id": "ChIJxfTYFv6ipBIRMCBAJOmO1Ac",
+            "plus_code": {
+                "compound_code": "95Q4+5J Barcelona, Spain",
+                "global_code": "8FH495Q4+5J"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJxfTYFv6ipBIRMCBAJOmO1Ac",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1052,
+            "vicinity": "Carrer de València, 153, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3916259,
+                    "lng": 2.1524973
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3929870302915,
+                        "lng": 2.153974880291502
+                    },
+                    "southwest": {
+                        "lat": 41.3902890697085,
+                        "lng": 2.151276919708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Paco Meralgo",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 329,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114519508038403189501\">Paco Meralgo</a>"
+                    ],
+                    "photo_reference": "Aap_uECY6SUMLDWABgmwVWURlXb79lbmgOYjc7USjOKeEMhQQUWTF-k1c-0iDV6Y9BRIeBOMuqNJ0aPAkBEId0KHfhArd8LNLsaTwvlhmsJn5GiDKVXQOKW3svoniQe21UkhZD4FT5FyHnMuAeRqLGAdyZwnj8cjszdlDvyQTwkJcifykT32",
+                    "width": 782
+                }
+            ],
+            "place_id": "ChIJzeQs2JqipBIREQ4pkufEXzM",
+            "plus_code": {
+                "compound_code": "95R2+MX Barcelona, Spain",
+                "global_code": "8FH495R2+MX"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJzeQs2JqipBIREQ4pkufEXzM",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 2834,
+            "vicinity": "Carrer de Muntaner, 171, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3885231,
+                    "lng": 2.1575611
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3898720802915,
+                        "lng": 2.158910080291502
+                    },
+                    "southwest": {
+                        "lat": 41.3871741197085,
+                        "lng": 2.156212119708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Taktika Berri",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3744,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109587613415934865926\">Taktika Berri</a>"
+                    ],
+                    "photo_reference": "Aap_uECf3FY7HRWZkg1jGQrPmujla_1hR9mbWGD0vZPPsl7S3TOdbVp-l7XuJ2PWG1Fj52f1XVCAHU5k7QKtf2dPw1mYc4a5ExWVL9QkLz3BJpo6-Yn9JctdXkQPDuy0bYUaOivwl3Hcc0Y1g8sur0CImAM-m_lLOvqwePJYfAYQraxrXxRF",
+                    "width": 5616
+                }
+            ],
+            "place_id": "ChIJ1QRf_46ipBIRKsoI__TclMw",
+            "plus_code": {
+                "compound_code": "95Q5+C2 Barcelona, Spain",
+                "global_code": "8FH495Q5+C2"
+            },
+            "price_level": 2,
+            "rating": 4.5,
+            "reference": "ChIJ1QRf_46ipBIRKsoI__TclMw",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1759,
+            "vicinity": "Carrer de València, 169, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3897156,
+                    "lng": 2.1591953
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3910285302915,
+                        "lng": 2.160591230291502
+                    },
+                    "southwest": {
+                        "lat": 41.3883305697085,
+                        "lng": 2.157893269708499
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Oval",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 958,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112828046134481325193\">Oval</a>"
+                    ],
+                    "photo_reference": "Aap_uEAVIbng7Fpez7DpPuL_g6xMDjnfWUbtw-kYbNzjA5IBDfj4CID32w-KPnQcUvzlY8MCNqkCYifbdGcRv2sr4bg_iCeQHOdx0RvyS6NgWOERMaXvVk7u26w0NI7IK20gXJX8-lVMTtEMP-N0nZfAg0_PFfQHwoAoD3W1YsMBHVfyPLtw",
+                    "width": 1399
+                }
+            ],
+            "place_id": "ChIJseHnco6ipBIRAPeo7ov8S-c",
+            "plus_code": {
+                "compound_code": "95Q5+VM Barcelona, Spain",
+                "global_code": "8FH495Q5+VM"
+            },
+            "price_level": 1,
+            "rating": 4.3,
+            "reference": "ChIJseHnco6ipBIRAPeo7ov8S-c",
+            "scope": "GOOGLE",
+            "types": [
+                "cafe",
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 2264,
+            "vicinity": "Carrer de València, 199, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3919182,
+                    "lng": 2.1545136
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3932671802915,
+                        "lng": 2.155862580291502
+                    },
+                    "southwest": {
+                        "lat": 41.3905692197085,
+                        "lng": 2.153164619708499
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Jardinet d'Aribau",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1600,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106134591092998320202\">Jardinet d&#39;Aribau</a>"
+                    ],
+                    "photo_reference": "Aap_uEDrRwmVu3PSmnzvaYUbKNHpJDNhrJIMYxnPr8o13OUWpvoWheBlJv56kWAHES0qpM4ycCKj7_xwN0wCKRvFd5GkZa2d3q9OHZVTc5PEsYNmTPqqMC-M9LSvZGaAXXe9xeYB8NNrmklW7hLSXonZAe8M0JhusQZVfINYFseytfLtkjHL",
+                    "width": 1200
+                }
+            ],
+            "place_id": "ChIJM6_vppqipBIRl0l4gxPl4Rs",
+            "plus_code": {
+                "compound_code": "95R3+QR Barcelona, Spain",
+                "global_code": "8FH495R3+QR"
+            },
+            "price_level": 2,
+            "rating": 4,
+            "reference": "ChIJM6_vppqipBIRl0l4gxPl4Rs",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "bar",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1541,
+            "vicinity": "Carrer d'Aribau, 133, Barcelona"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 41.3931413,
+                    "lng": 2.156818
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3944386302915,
+                        "lng": 2.158267080291502
+                    },
+                    "southwest": {
+                        "lat": 41.3917406697085,
+                        "lng": 2.155569119708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Mojito",
+            "permanently_closed": true,
+            "photos": [
+                {
+                    "height": 1285,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113256123782211537733\">Mojito</a>"
+                    ],
+                    "photo_reference": "Aap_uEABcSmrcdzP1xdrZDDLYnbDgRPSbFAaYFY65F69B1C_Qa23AaRlhiHu171Ozs6lGIP4QTr6BJqWXzS_ZbK4RKxWgCjpvpbss8nALDAgSLzweFW-xFykyLY6DVTFjiJpcVlqoamqreHLqjiMq5ZwpSynv8Q0zCB7Mpvj-UiD-k2jLBro",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJGeBhUZCipBIR-VZyXJ7UNsI",
+            "plus_code": {
+                "compound_code": "95V4+7P Barcelona, Spain",
+                "global_code": "8FH495V4+7P"
+            },
+            "price_level": 2,
+            "rating": 3.6,
+            "reference": "ChIJGeBhUZCipBIR-VZyXJ7UNsI",
+            "scope": "GOOGLE",
+            "types": [
+                "night_club",
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1271,
+            "vicinity": "Carrer del Rosselló, 217, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3866918,
+                    "lng": 2.159131
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3880678302915,
+                        "lng": 2.160532980291502
+                    },
+                    "southwest": {
+                        "lat": 41.38536986970851,
+                        "lng": 2.157835019708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Punto BCN",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107008889097207559633\">Oscar gallardo martinez</a>"
+                    ],
+                    "photo_reference": "Aap_uEA6RyNScsYlxySLvG9L9fTTLSyhYVqKPiAY0_qa5l_R3-QEeueOuMWePd-ANuf45yFOFtRS8DhmilqkdSKMXlw8XTr0oANckuI8heEBN6KEqc7MJjFt61hxlMzwTB2ib8ZmLtK_n9yVwjxaJieLwC5Hu7QDbEpvb__UF1LfwH0gVH0",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJ0dxMpY6ipBIRb7AszXVMRnk",
+            "plus_code": {
+                "compound_code": "95P5+MM Barcelona, Spain",
+                "global_code": "8FH495P5+MM"
+            },
+            "rating": 3.9,
+            "reference": "ChIJ0dxMpY6ipBIRb7AszXVMRnk",
+            "scope": "GOOGLE",
+            "types": [
+                "night_club",
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 647,
+            "vicinity": "Carrer de Muntaner, 65, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.3888155,
+                    "lng": 2.1569071
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3900889302915,
+                        "lng": 2.158156730291501
+                    },
+                    "southwest": {
+                        "lat": 41.3873909697085,
+                        "lng": 2.155458769708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "La Martinera Bar Cocktail Lounge",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102598155678833379512\">La Martinera Bar Cocktail Lounge</a>"
+                    ],
+                    "photo_reference": "Aap_uECeF-8AB5ySL2lNyWliMEOwVRpzknfBqqiD9UFsB726vVI6RE8_nCtaof2QOZyll9wZSMVxNdGIB3Uyh6pfC8i22l4bH41Ov_VRFkZA6PoQzAvc7EfOSvom5YCjv2HzJ6EA-1MFDDdjmJzrOhQ7VlPVrLnPJsmBZEYYlwFvFWkf8Yzm",
+                    "width": 5184
+                }
+            ],
+            "place_id": "ChIJGUn0qI-ipBIRmyyNno6jnqw",
+            "plus_code": {
+                "compound_code": "95Q4+GQ Barcelona, Spain",
+                "global_code": "8FH495Q4+GQ"
+            },
+            "price_level": 2,
+            "rating": 3.8,
+            "reference": "ChIJGUn0qI-ipBIRmyyNno6jnqw",
+            "scope": "GOOGLE",
+            "types": [
+                "night_club",
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 31,
+            "vicinity": "Carrer de Muntaner, 102, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.39019649999999,
+                    "lng": 2.1601595
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3915702802915,
+                        "lng": 2.161474980291501
+                    },
+                    "southwest": {
+                        "lat": 41.3888723197085,
+                        "lng": 2.158777019708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+            "name": "Bitte! Wurst",
+            "opening_hours": {
+                "open_now": true
+            },
+            "place_id": "ChIJJeqP5I2ipBIRtowUEgV2R7Q",
+            "plus_code": {
+                "compound_code": "95R6+33 Barcelona, Spain",
+                "global_code": "8FH495R6+33"
+            },
+            "reference": "ChIJJeqP5I2ipBIRtowUEgV2R7Q",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Carrer de València, 232, Barcelona"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 41.38851830000001,
+                    "lng": 2.1505051
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 41.3897788802915,
+                        "lng": 2.151776230291502
+                    },
+                    "southwest": {
+                        "lat": 41.3870809197085,
+                        "lng": 2.149078269708498
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Salzburg Urgell",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109819622616622942162\">Jose Maria Quintana Fornos</a>"
+                    ],
+                    "photo_reference": "Aap_uECmyGEAxtuXI17BGcZchY6AFJMZ90oxZphQp4DQEbF8z2GfrONvADo5D9LkcsVQPhJhjKWOGCbbJcnZOM3gYKRTHXDaMPnQ3HSM3T_VXxl9KkMVBdRtzO0M_3LKUXzBxntBbGiimV0DgwINqM1ifzUyq5OnRvezsy0cbx3aogbvU1nl",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJrTeoTCG9pBIRcs04YxS6w7I",
+            "plus_code": {
+                "compound_code": "95Q2+C6 Barcelona, Spain",
+                "global_code": "8FH495Q2+C6"
+            },
+            "price_level": 2,
+            "rating": 3.8,
+            "reference": "ChIJrTeoTCG9pBIRcs04YxS6w7I",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1879,
+            "vicinity": "Carrer del Comte d'Urgell, 204, Barcelona"
+        }
+    ],
+    "status": "OK"
+}

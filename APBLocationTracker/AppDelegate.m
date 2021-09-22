@@ -6,36 +6,79 @@
 //
 
 #import "AppDelegate.h"
-#import "APBDashboardViewController.h"
+#import "APBTabViewController.h"
+#import "Constants.h"
+#import "APBCoordinateMO+CoreDataClass.h"
+#import "NSManagedObject+Helpers.h"
+#import <UserNotifications/UserNotifications.h>
+#import "CoreLocation/CoreLocation.h"
+#import "APBVisitMO+CoreDataClass.h"
+#import "APBHttpClient.h"
+#import "NSURLSession+Extension.h"
+#import "APBNSURLSessionStub.h"
 
-@interface AppDelegate () {
-    UINavigationController *_navController;
+@interface AppDelegate () <CLLocationManagerDelegate> {
+    APBTabViewController *_tabController;
+    CLLocationManager *_locationManager;
+    id<APBNSURLSessionProtocol> _urlSession;
 }
 
 @end
 
 @implementation AppDelegate
 
-- (UINavigationController *)navController {
+- (id<APBNSURLSessionProtocol>)urlSession {
+    if (_urlSession == nil) {
+//        _urlSession = [NSURLSession sharedSession];
+        _urlSession = [[APBNSURLSessionStub alloc] init];
+    }
+    return _urlSession;
+}
 
-    if (!_navController) {
-        CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-        APBDashboardViewController *dashboardViewController = [[APBDashboardViewController alloc] initWithLocationManager:locationManager];
-        _navController = [[UINavigationController alloc] initWithRootViewController:dashboardViewController];
-        _navController.navigationBar.barStyle = UIBarStyleBlack;
-        _navController.navigationBar.tintColor = [UIColor whiteColor];
+- (CLLocationManager *)locationManager {
+    if (_locationManager == nil) {
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.allowsBackgroundLocationUpdates = YES;
+        _locationManager.delegate = self;
+    }
+    return _locationManager;
+}
+
+- (APBTabViewController *)tabController {
+    if (!_tabController) {
+        _tabController = [[APBTabViewController alloc] initWithLocationManager:self.locationManager
+                                                                    urlSession:self.urlSession];
     }
 
-    return _navController;
+    return _tabController;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    [self.locationManager startMonitoringVisits];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window setRootViewController:self.navController];
+    [self.window setRootViewController:self.tabController];
     [self.window makeKeyAndVisible];
 
     return YES;
+}
+
+#pragma mark - Private methods
+
+- (void)saveCoordinate:(CLLocationCoordinate2D)coordinate {
+    NSLog(@"Visit detected: Latitude - %f, Longitude - %f", coordinate.latitude, coordinate.longitude);
+
+    NSDictionary *locationInfo = @{ @"latitude": [NSNumber numberWithDouble:coordinate.latitude],
+                                    @"longitude": [NSNumber numberWithDouble:coordinate.longitude] };
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAPBVisitDetected
+                                                        object:nil
+                                                      userInfo:locationInfo];
+
+    APBCoordinateMO *createdCoordinate = [APBCoordinateMO createWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+
+
+    [APBVisitMO createWithCoordinate:createdCoordinate];
 }
 
 #pragma mark - Core Data stack
@@ -68,6 +111,40 @@
     }
     
     return _persistentContainer;
+}
+
+#pragma mark CLLocationManagerDelegate
+
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager *)manager {
+    if (manager.authorizationStatus == kCLAuthorizationStatusAuthorizedAlways) {
+        [manager startMonitoringVisits];
+        [manager requestLocation];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+
+    CLLocation *location = locations.lastObject;
+
+    if (location != nil) {
+        NSLog(@"Location detected: Latitude - %f, Longitude - %f", location.coordinate.latitude, location.coordinate.longitude);
+
+        NSDictionary *locationInfo = @{ @"latitude": [NSNumber numberWithDouble:location.coordinate.latitude],
+                                        @"longitude": [NSNumber numberWithDouble:location.coordinate.longitude] };
+
+        [[NSNotificationCenter defaultCenter] postNotificationName:kAPBLocationDetected
+                                                            object:nil
+                                                          userInfo:locationInfo];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didVisit:(CLVisit *)visit {
+
+    [self saveCoordinate:visit.coordinate];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+
 }
 
 #pragma mark - Core Data Saving support

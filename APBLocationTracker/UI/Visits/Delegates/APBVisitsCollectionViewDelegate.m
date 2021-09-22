@@ -1,20 +1,20 @@
 //
-//  APBLocationsCollectionViewDelegate.m
+//  APBVisitsCollectionViewDelegate.m
 //  APBLocationTracker
 //
-//  Created by ApprovedBug on 15/09/2021
+//  Created by ApprovedBug on 20/09/2021
 //
 
-#import "APBLocationsCollectionViewDelegate.h"
-#import <APBFoundation/APBFoundation.h>
-#import "APBLocationMO+CoreDataClass.h"
+#import "APBVisitsCollectionViewDelegate.h"
+#import "APBBaseCollectionViewCell.h"
+#import "APBVisitMO+CoreDataClass.h"
 
-@implementation APBLocationsCollectionViewDelegate
+@implementation APBVisitsCollectionViewDelegate
 
 #pragma mark - Constants
 
-CGFloat const kOneCellMargin = 8;
-CGFloat const kTextViewHeight = 88;
+CGFloat const kVisitsCellMargin = 8;
+CGFloat const kVisitsCellHeight = 150;
 
 #pragma mark - Init methods
 
@@ -35,7 +35,7 @@ CGFloat const kTextViewHeight = 88;
     APBBaseCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.reuseIdentifier
                                                                                 forIndexPath:indexPath];
 
-    APBLocationMO *location = [self.data objectAtIndex:indexPath.item];
+    APBVisitMO *location = [self.data objectAtIndex:indexPath.item];
     cell.data = location;
 
     return cell;
@@ -49,9 +49,9 @@ CGFloat const kTextViewHeight = 88;
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.data != nil && self.data.count > 0){
-        CGFloat spacing = kOneCellMargin * 2;
+        CGFloat spacing = kVisitsCellMargin * 2;
         CGFloat width = [UIApplication sharedApplication].windows.firstObject.bounds.size.width - spacing;
-        CGFloat height = kTextViewHeight;
+        CGFloat height = kVisitsCellHeight;
         return CGSizeMake(width, height);
     } else {
         return CGSizeZero;

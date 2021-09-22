@@ -9,8 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APBDashboardRootView : APBBaseView
+@interface APBNearbyRootView : APBBaseView
 
+@property (nonatomic) UIActivityIndicatorView *activityIndicatorView;
 @property (nonatomic) UICollectionView *locationsCollectionView;
 
 @end

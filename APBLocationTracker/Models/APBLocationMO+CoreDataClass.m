@@ -11,6 +11,8 @@
 #import "NSManagedObject+Helpers.h"
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "APBHttpClient.h"
+#import "NSURLSession+Extension.h"
 
 @implementation APBLocationMO
 
@@ -30,6 +32,30 @@
 
     location.id = [dictionary valueForKey:@"place_id" ifKindOf:[NSString class]];
     location.name = [dictionary valueForKey:@"name" ifKindOf:[NSString class]];
+    location.vicinity = [dictionary valueForKey:@"vicinity" ifKindOf:[NSString class]];
+    location.types = [dictionary valueForKey:@"types" ifKindOf:[NSArray class]];
+
+    NSArray *photos = [dictionary valueForKey:@"photos" ifKindOf:[NSArray class]];
+    if ([photos firstObject] != nil) {
+        NSDictionary *thumbnailDict = [photos firstObject];
+        NSString *photoRef = [thumbnailDict valueForKey:@"photo_reference" ifKindOf:[NSString class]];
+        location.thumbnailUrl = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&photo_reference=%@&key=%@", photoRef, @"AIzaSyAKf7aYgDnXsPiyB9N5Ta5WiptoeFiiwZQ"];
+    }
+
+    NSNumber *rating = [dictionary valueForKey:@"rating" ifKindOf:[NSNumber class]];
+    if (rating != nil) {
+        location.rating = [rating doubleValue];
+    }
+
+    NSNumber *userRatingsTotal = [dictionary valueForKey:@"user_ratings_total" ifKindOf:[NSNumber class]];
+    if (userRatingsTotal != nil) {
+        location.userRatingsTotal = [userRatingsTotal intValue];
+    }
+
+    NSNumber *priceLevel = [dictionary valueForKey:@"price_level" ifKindOf:[NSNumber class]];
+    if (priceLevel != nil) {
+        location.priceLevel = [priceLevel doubleValue];
+    }
 
     [delegate saveContext];
 
@@ -66,39 +92,54 @@
 
 #pragma mark Public methods
 
-+ (void)locationsWithLatitude:(double)latitude
-                    longitude:(double)longitude
-                       succes:(void (^)(NSArray * _Nonnull))success
-                      failure:(void (^)(NSError * _Nonnull))failure {
++ (void)nearbyLocationsWithLatitude:(double)latitude
+                          longitude:(double)longitude
+                         urlSession:(id<APBNSURLSessionProtocol>)urlSession
+                            success:(void (^)(NSArray * _Nonnull))success
+                            failure:(void (^)(NSError * _Nonnull))failure {
+    NSURL *url = [self locationURLWithRadius:500 latitude:latitude longitude:longitude];
 
+    APBHttpClient *client = [[APBHttpClient alloc] initWithSession:urlSession];
+
+    [client getWithURL:url headers:nil completionHandler:^(NSData * _Nullable data,
+                                                           NSURLResponse * _Nullable response,
+                                                           NSError * _Nullable error) {
+        [self handleNetworkResponse:data succes:success failure:failure];
+    }];
+}
+
++ (void)specificLocationWith:(double)latitude
+                   longitude:(double)longitude
+                  urlSession:(id<APBNSURLSessionProtocol>)urlSession
+                     success:(void (^)(NSArray * _Nonnull))success
+                     failure:(void (^)(NSError * _Nonnull))failure {
+
+    NSURL *url = [self locationURLWithRadius:15 latitude:latitude longitude:longitude];
+
+    APBHttpClient *client = [[APBHttpClient alloc] initWithSession:urlSession];
+
+    [client getWithURL:url headers:nil completionHandler:^(NSData * _Nullable data,
+                                                           NSURLResponse * _Nullable response,
+                                                           NSError * _Nullable error) {
+        [self handleNetworkResponse:data succes:success failure:failure];
+    }];
+}
+
++ (NSURL *)locationURLWithRadius:(int)radius
+                        latitude:(double)latitude
+                        longitude:(double)longitude {
     NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json"];
 
     NSString *formattedLatLong = [NSString stringWithFormat:@"%f %f", latitude, longitude];
 
-    NSArray *queryItems = @[[[NSURLQueryItem alloc] initWithName:@"radius" value:@"200"],
+    NSArray *queryItems = @[[[NSURLQueryItem alloc] initWithName:@"radius" value:[@(radius) stringValue]],
                             [[NSURLQueryItem alloc] initWithName:@"type" value:@"bar"],
                             [[NSURLQueryItem alloc] initWithName:@"key" value:@"AIzaSyAKf7aYgDnXsPiyB9N5Ta5WiptoeFiiwZQ"],
                             [[NSURLQueryItem alloc] initWithName:@"location" value:formattedLatLong]];
 
     [urlComponents setQueryItems:queryItems];
 
-    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[urlComponents URL]];
-
-    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-
-            if (error == nil) {
-                [self handleNetworkResponse:data
-                                     succes:success
-                                    failure:failure];
-            } else {
-                failure(error);
-            }
-        });
-    }];
-
-    [task resume];
+    return [urlComponents URL];
 }
 
 @end

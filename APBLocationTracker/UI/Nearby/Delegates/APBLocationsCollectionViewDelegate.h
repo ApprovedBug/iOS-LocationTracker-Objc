@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APBLocationsCollectionViewDelegate : NSObject<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface APBNearbyCollectionViewDelegate : NSObject<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 - (instancetype)initWithClass:(Class)class resuseIdentifier:(NSString *)identifier;
 

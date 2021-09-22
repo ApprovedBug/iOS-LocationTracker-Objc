@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "APBHttpClient.h"
 
 @class APBPhotoMO, APBReviewMO, NSObject;
 
@@ -15,10 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APBLocationMO : NSManagedObject
 
-+ (void)locationsWithLatitude:(double)latitude
-                    longitude:(double)longitude
-                       succes:(void(^)(NSArray *locations))success
-                      failure:(void(^)(NSError *error))failure;
++ (void)nearbyLocationsWithLatitude:(double)latitude
+                          longitude:(double)longitude
+                         urlSession:(id<APBNSURLSessionProtocol>)urlSession
+                            success:(void(^)(NSArray *locations))success
+                            failure:(void(^)(NSError *error))failure;
+
++ (void)specificLocationWith:(double)latitude
+                   longitude:(double)longitude
+                  urlSession:(id<APBNSURLSessionProtocol>)urlSession
+                     success:(void(^)(NSArray *locations))success
+                     failure:(void(^)(NSError *error))failure;
 
 @end
 

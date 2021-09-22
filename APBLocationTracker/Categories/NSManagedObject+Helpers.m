@@ -36,7 +36,7 @@
     NSError *error = nil;
     NSArray *results = [context executeFetchRequest:request error:&error];
     if (!results) {
-        NSLog(@"Error fetching Employee objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        NSLog(@"Error fetching objects: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
 
@@ -56,7 +56,7 @@
     NSError *error = nil;
     NSArray *results = [context executeFetchRequest:request error:&error];
     if (!results) {
-        NSLog(@"Error fetching Employee objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        NSLog(@"Error fetching objects: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
 

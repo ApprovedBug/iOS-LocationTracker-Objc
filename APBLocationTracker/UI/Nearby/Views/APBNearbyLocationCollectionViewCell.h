@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APBDashboardLocationCollectionViewCell : APBBaseCollectionViewCell {
+@interface APBNearbyLocationCollectionViewCell : APBBaseCollectionViewCell {
     APBLocationMO *_data;
 }
 
